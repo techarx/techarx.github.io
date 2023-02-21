@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "Manrope";
+  src: url("https: //fonts.google.com/specimen/Manrope");
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+}
+
+#container {
+  display: grid;
+  place-items: center;
+  margin-top: 100px;
+}
+
+#container2 {
+  background-color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 30px;
+  width: 70%;
+  height: 250px;
+  border-radius: 20px;
+}
+
+#shelf {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 35%;
+  height: 250px;
+  overflow: hidden;
+}
+
+img {
+  max-width: 120%;
+  max-height: 100%;
+}
+
+#information {
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 65%;
+  height: 250px;
+}
+
+h2 {
+  word-spacing: 5px;
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+}
+
+p {
+  font-size: small;
+  color: hsl(214, 17%, 51%);
+  word-spacing: 4px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+#contact-info {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 40px;
+}
+
+.avatar1,
+#name {
+  float: left;
+  width: 50%;
+}
+
+.avatar1 {
+  width: 40px;
+  border-radius: 100%;
+}
+
+#name {
+  margin-left: 15px;
+  height: 40px;
+}
+
+h5 {
+  color: hsl(217, 19%, 35%);
+  margin: 0;
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+
+#date {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: hsl(210, 4%, 81%);
+}
+
+#share-btn-div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 25px;
+  border-radius: 0%;
+}
+
+.share-btn-icon {
+  width: 17px;
+  height: 17px;
+}
+#share-container-one {
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  width: 80%;
+  height: 40px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 19%, 35%);
+  z-index: 1;
+  bottom: 120%;
+  left: 40%;
+  margin-left: -60px;
+}
+#share-btn-div #share-container-one::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+}
+
+#share-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#share-p {
+  margin: 0;
+  color: hsl(210, 4%, 81%);
+  font-weight: 300;
+  font-size: 0.7rem;
+  margin-right: 5px;
+}
+.share-icon-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+}
+.share-icon {
+  background-color: hsl(217, 19%, 35%);
+  width: 60%;
+  height: auto;
+}
